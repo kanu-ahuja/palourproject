@@ -2,7 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 const Our_offering = () => {
-    
+
     return (<>
         <div className="container">
             <div>

@@ -261,6 +261,7 @@ li {
   max-width: 400px;
   width: 100%;
   padding: 10px 10px;
+  cursor: pointer;
 }
 .offer_content{
   display: flex;
