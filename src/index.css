@@ -226,9 +226,9 @@ li {
 
 /* Our Offerings Start */
 .offerings_cards{
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(5,1fr);
-  gap: 15px;
+  gap: 15px; */
   margin: 40px 0px;
 }
 .offer_items:hover{
@@ -303,7 +303,7 @@ li {
     line-height: 16px;
   }
   .offerings_cards{
-    grid-template-columns: repeat(2,1fr);
+    /* grid-template-columns: repeat(2,1fr); */
   }
 }
 
@@ -320,7 +320,7 @@ li {
     gap: 5px;
   }
   .offerings_cards{
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
   }
   .offering_heading{
     font-size: 24px;

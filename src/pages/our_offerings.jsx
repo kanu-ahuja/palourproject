@@ -1,12 +1,37 @@
 import React from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 const Our_offering = () => {
-
+    
     return (<>
         <div className="container">
             <div>
                 <h1 className="xxxl_body_text offering_heading">Our Offerings</h1>
             </div>
             <div className="offerings_cards">
+            <Swiper
+                spaceBetween={24}
+                slidesPerView={1}
+                breakpoints={{
+                    1100: {
+                        slidesPerView: 4,
+                    },
+                    700: {
+                        slidesPerView: 3,
+                    },
+                    576: {
+                        slidesPerView: 1.5,
+                    },
+
+                    391: {
+                        slidesPerView: 1,
+                        spaceBetween: 35,
+                    },
+            }}
+            onSlideChange={() => console.log('slide change')}
+            onSwiper={(swiper) => console.log(swiper)}
+           >
+                <SwiperSlide>
                 <div className="offer_items">
                     <img src="https://image3.jdomni.in/library/4A/BB/0F/342539C049ACB98556AEC13CD9_1496249490939_cropped_450X450.jpeg" alt="error" className="offerings_images" />
                     <div className="offer_content">
@@ -15,7 +40,9 @@ const Our_offering = () => {
                         <button className="offering_button">Enquiry Now</button>
                     </div>
                 </div>
+                </SwiperSlide>
 
+                <SwiperSlide>
                 <div className="offer_items">
                     <img src="https://image3.jdomni.in/banner/08112023/7C/01/A8/5E0FFADC171839C18D36CD8F5F_1699439718395.jpg?output-format=webp" alt="error" className="offerings_images" />
                     <div className="offer_content">
@@ -24,7 +51,9 @@ const Our_offering = () => {
                         <button className="offering_button">Enquiry Now</button>
                     </div>
                 </div>
+                </SwiperSlide>
 
+                <SwiperSlide>
                 <div className="offer_items">
                     <img src="https://image3.jdomni.in/banner/11112023/1E/52/94/DDECA468EB718AAEA8E594EA15_1699683100445.jpg?output-format=webp" alt="error" className="offerings_images" />
                     <div className="offer_content">
@@ -33,6 +62,10 @@ const Our_offering = () => {
                         <button className="offering_button">Enquiry Now</button>
                     </div>
                 </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+
                 <div className="offer_items">
                     <img src="https://image2.jdomni.in/library/17/EF/F1/5EA490A19490BF6A3C2291795C_1496776104102_cropped_450X450.jpeg" alt="error" className="offerings_images" />
                     <div className="offer_content">
@@ -41,6 +74,10 @@ const Our_offering = () => {
                         <button className="offering_button">Enquiry Now</button>
                     </div>
                 </div>
+
+                </SwiperSlide>
+
+                <SwiperSlide>
                 <div className="offer_items">
                     <img src="https://image2.jdomni.in/banner/08112023/16/4C/0C/4C1022396EA7BA20BD7B1095CC_1699440509799.jpg?output-format=webp" alt="error" className="offerings_images" />
                     <div className="offer_content">
@@ -49,7 +86,9 @@ const Our_offering = () => {
                         <button className="offering_button">Enquiry Now</button>
                     </div>
                 </div>
+                </SwiperSlide>
 
+                <SwiperSlide>
                 <div className="offer_items">
                     <img src="https://image3.jdomni.in/banner/18012022/69/AD/C1/5BF1B17A911118F65C010F97AA_1642482144398.jpg?output-format=webp" alt="error" className="offerings_images" />
                     <div className="offer_content">
@@ -58,7 +97,9 @@ const Our_offering = () => {
                         <button className="offering_button">Enquiry Now</button>
                     </div>
                 </div>
+                </SwiperSlide>
 
+                <SwiperSlide>
                 <div className="offer_items">
                     <img src="https://image3.jdomni.in/banner/18012022/51/E3/9D/B1D114BA7BE4EA8EEAED8C2F4B_1642482240857.jpg?output-format=webp" alt="error" className="offerings_images" />
                     <div className="offer_content">
@@ -67,7 +108,8 @@ const Our_offering = () => {
                         <button className="offering_button">Enquiry Now</button>
                     </div>
                 </div>
-
+                </SwiperSlide>
+                </Swiper>
             </div>
         </div>
     </>)
